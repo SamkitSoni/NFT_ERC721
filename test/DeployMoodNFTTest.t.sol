@@ -19,6 +19,4 @@ contract DeployMoodNFTTest is Test {
         string memory actualURI = deployer.svgToImgUri(svg);
         assert(keccak256(abi.encodePacked(expectedUri)) == keccak256(abi.encodePacked(actualURI)));
     }
-
-    
 }
